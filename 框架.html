@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人设置</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/me.css">
+    <link rel="stylesheet" href="./static/css/typo.css">
+</head>
+<body>
+<!--上栏-->
+<div class="ui inverted top attached demo menu">
+    <a class="item m-item">
+        <i class="sidebar icon"></i>
+        Menu
+    </a>
+    <a class="item right aligned">
+        江淮bbs
+    </a>
+    <a class="item right aligned" style="margin-left: 0!important;">
+        <i class="remove icon"></i>
+        登出
+    </a>
+    <a class="item right aligned" style="margin-left: 0!important;">
+        <i class="send icon"></i>
+        帮助
+    </a>
+</div>
+<!--    左侧边栏-->
+<div class="ui very sidebar inverted vertical menu">
+    <div class="ui m-margin-top-large-blog">
+        <buttom class="item"><img class="ui centered small circular image" src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1674890653,2561905300&fm=26&gp=0.jpg"></buttom>
+    </div>
+
+    <div class="ui basic center aligned typo-h1 segment">
+        <a class="item">
+            <i class="dashboard icon"></i>
+            管理文章
+        </a>
+        <a class="item">
+            <i class="envelope icon"></i>
+                归档页面
+        </a>
+        <a class="item">
+            <i class="book icon"></i>
+            书单管理
+        </a>
+        <a class="item">
+            <i class="home icon"></i>
+            个人中心
+        </a>
+    </div>
+</div>
+<!--内容页面-->
+<div class="ui vertical segment m-padded-tb-massive">
+    <div class="ui center aligned container">
+        <div class="ui attached m-shadow padded segment">
+
+        </div>
+    </div>
+</div>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+<script>
+    $(' .ui.sidebar')
+        // .sidebar({
+        //     context: $(' .bottom.segment')
+        // })
+        .sidebar('setting',{
+            dimPage             : false,
+            transition          : 'uncover',
+            mobileTransition    : 'uncover'
+        })
+        .sidebar('attach events', '.m-item')
+    ;
+</script>
+</body>
+</html>
