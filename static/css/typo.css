@@ -246,7 +246,7 @@
 }
 
 .typo h2, .typo-h2 {
-  font-size: 1.8em;
+  font-size: 1.8em!important;
 }
 
 .typo h3, .typo-h3 {
