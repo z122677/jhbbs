@@ -1,6 +1,9 @@
 body {
     background-color: #efefef;
 }
+.m-img-radius{
+    border-radius: 10%;
+}
 .m-font {
     font-size: 40px!important;
     font-weight: 500!important;
@@ -154,6 +157,9 @@ body {
 }
 .m-margin-bottom-small {
     margin-bottom: 0.5em !important;
+}
+.m-margin-bottom-middle {
+    margin-bottom: 1em !important;
 }
 .m-margin-bottom {
     margin-bottom: 3em !important;
