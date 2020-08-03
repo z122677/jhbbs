@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./static/css/me.css">
     <link rel="stylesheet" href="./static/css/typo.css">
     <link rel="stylesheet" href="./static/css/login.css">
+    <script src="./static/js/main.js"></script>
 </head>
 <body>
 
@@ -20,13 +21,13 @@
                 </div>
                 <div class="field">
                     <h3 class="typo-h4">密码</h3>
-                    <input type="password" name="password" id="password" placeholder="密码">
+                    <input type="password" name="password" id="password" placeholder="密码" autocomplete="false">
                 </div>
                 <div class="field">
-                    <input type="text" style="width: 6em!important;margin-right: 2em!important;" placeholder="验证码"/>
-                    <img src="http://jwxt.ahujhc.cn/CheckCode.aspx"/>
+                    <input type="text" style="width: 6em!important;margin-right: 2em!important;" placeholder="验证码" id="check_code"/>
+                    <img src=""/>
                 </div>
-                <button class="button type3" type="submit">
+                <button class="button type3" onclick="login()" type="button">
                     LOGIN
                 </button>
             </form>
@@ -34,7 +35,13 @@
 
         <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
-
         <script type="text/javascript" src="./static/js/login.js"></script>
 </body>
 </html>
+
+<script>
+  $(function () {
+    getCode()
+  })
+
+</script>

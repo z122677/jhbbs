@@ -10,103 +10,7 @@
 
 </head>
 <body >
-<!--上栏-->
-<div class="ui top inverted attached demo menu">
-    <a class="item m-item">
-        <i class="sidebar icon"></i>
-        Menu
-    </a>
-    <a class="item right aligned">
-        用户中心
-    </a>
-    <a class="item right aligned" style="margin-left: 0!important;">
-        <i id="icon"></i>
-        <span id="login">登录</span>
-    </a>
-    <a class="item right aligned" style="margin-left: 0!important;">
-        <i class="send icon"></i>
-        帮助
-    </a>
-</div>
-<!--    左侧边栏-->
-<div class="ui very sidebar inverted vertical menu">
-    <div class="ui m-margin-top-large-blog">
-        <buttom class="item"><img class="ui centered small circular image" src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1674890653,2561905300&fm=26&gp=0.jpg"></buttom>
-    </div>
-    <div class="ui basic center aligned segment">
-        <h2 class="item typo-h1">
-            江淮bbs
-        </h2>
-    </div>
-    <div class="ui inverted segment">
-        <div class="ui inverted accordion">
-            <div class="title active" style="font-size: 1.2em!important;"><i class="dropdown icon"></i> 校园模块</div>
-            <div class="content active">
-                <a class="item">
-                    新生入驻
-                </a>
-                <a class="item">
-                    校园动态
-                </a>
-                <a class="item">
-                    杂谈
-                </a>
-                <a class="item">
-                    招聘栏目
-                </a>
-                <a class="item">
-                    活动组织
-                </a>
-            </div>
-            <div class="title m-margin-top-small" style="font-size: 1.2em!important;"><i class="dropdown icon"></i> 信息快讯 </div>
-            <div class="content">
-                <a class="item">
-                    兼职相关
-                </a>
-                <a class="item">
-                    房屋宿舍
-                </a>
-                <a class="item">
-                    跳蚤市场
-                </a>
-            </div>
-            <div class="title m-margin-top-small" style="font-size: 1.2em!important;"><i class="dropdown icon"></i> 人文艺术 </div>
-            <div class="content">
-                <a class="item">
-                    原创地带
-                </a>
-                <a class="item">
-                    外语交流
-                </a>
-                <a class="item">
-                    考研专区
-                </a>
-                <a class="item">
-                    其他
-                </a>
-            </div>
-            <div class="title m-margin-top-small" style="font-size: 1.2em!important;"><i class="dropdown icon"></i> 飞扬青春 </div>
-            <div class="content">
-                <a class="item">
-                    爱好交流
-                </a>
-                <a class="item">
-                    小伙伴散落聚集地
-                </a>
-                <a class="item">
-                    单身男女俱乐部
-                </a>
-            </div>
-            <div class="title m-margin-top-small" style="font-size: 1.2em!important;"><i class="dropdown icon"></i> 站务 </div>
-            <div class="content">
-                <a class="item">
-                    江淮站务
-                </a>
-            </div>
-        </div>
-
-    </div>
-</div>
+<script type="text/javascript" src="./static/js/head.js"></script>
 <!--内容页面-->
 <div  class="ui vertical segment" style="padding: 0!important;" >
     <div class="m-margin-bottom">
@@ -258,80 +162,13 @@
     </div>
 </div>
 
-<!--置顶按钮-->
-<div id="toolbar" class="m-padded m-fixed m-right-bottom">
-    <div class="ui vertical icon buttons">
-        <div id="toTop" class="ui icon black button m-margin-top-large-blog"><i class="big angle double up icon"></i></div>
-    </div>
-</div>
-<footer class="ui vertical segment m-padded-tb-massive m-opacity-nav m-margin-top-large" style="background-color: white">
-    <div class="ui center aligned container">
-        <h3 class="typo-h3">江淮BBS<i class="heartbeat icon"></i> </h3>
-        <p id="hitokoto" class="typo-p m-margin-bottom">:D 获取中...</p>
-        <a href="#" style="color: #333333" class="m-margin-top typo-p">联系开发者</a>
-    </div>
-</footer>
+
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
 <script src="https://cdn.bootcdn.net/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 <script src="./static/lib/waypoints/jquery.waypoints.min.js"></script>
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery-scrollTo/2.0.1/jquery.scrollTo.min.js"></script>
 <script src="./static/js/index.js"></script>
-
-<script>
-    $(' .ui.sidebar')
-        // .sidebar({
-        //     context: $(' .bottom.segment')
-        // })
-        .sidebar('setting',{
-            dimPage             : false,
-            transition          : 'uncover',
-            mobileTransition    : 'uncover'
-        })
-        .sidebar('attach events', '.m-item')
-    ;
-    $(document).ready(function(){
-        $('.accordion').accordion({duration:'click'});
-    });
-    $('.progress').progress();
-    var xhr = new XMLHttpRequest();
-    xhr.open('get', 'https://v1.hitokoto.cn');
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4) {
-            var data = JSON.parse(xhr.responseText);
-            var hitokoto = document.getElementById('hitokoto');
-            hitokoto.innerText = data.hitokoto;
-        }
-    }
-    xhr.send();
-    // 置顶按钮
-
-    var waypoint = new Waypoint({
-        element: document.getElementById('waypoint'),
-        handler: function(direction) {
-            if(direction == 'down'){
-                $('#toolbar').show(200);
-            } else {
-                $('#toolbar').hide(500);
-            }
-
-        }
-    });
-    var waypoint1 = new Waypoint({
-        element: document.getElementById('waypoint'),
-        handler: function(direction) {
-            if(direction == 'down'){
-                $('#menu').show(200);
-            } else {
-                $('#menu').hide(500);
-            }
-
-        }
-    });
-    $('#toTop').click(function () {
-        $(window).scrollTo(0,500);
-    });
-
-</script>
+<script type="text/javascript" src="./static/js/iframe.js"></script>
 </body>
 </html>

@@ -7,128 +7,70 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./static/css/me.css">
     <link rel="stylesheet" href="./static/css/typo.css">
+    <link rel="stylesheet" href="./static/css/index.css">
 
 </head>
-<body >
-<!--上栏-->
-<div class="ui top inverted attached demo menu">
-    <a class="item m-item">
-        <i class="sidebar icon"></i>
-        Menu
-    </a>
-    <a class="item right aligned">
-        用户中心
-    </a>
-    <a class="item right aligned" style="margin-left: 0!important;">
-        <i id="icon"></i>
-        <span id="login">登录</span>
-    </a>
-    <a class="item right aligned" style="margin-left: 0!important;">
-        <i class="send icon"></i>
-        帮助
-    </a>
-</div>
-<!--    左侧边栏-->
-<div class="ui very sidebar inverted vertical menu">
-    <div class="ui m-margin-top-large-blog">
-        <buttom class="item"><img class="ui centered small circular image" src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1674890653,2561905300&fm=26&gp=0.jpg"></buttom>
-    </div>
-    <div class="ui basic center aligned segment">
-    <h2 class="item typo-h1">
-        江淮bbs
-    </h2>
-    </div>
-    <div class="ui inverted segment">
-        <div class="ui inverted accordion">
-            <div class="title active" style="font-size: 1.2em!important;"><i class="dropdown icon"></i> 校园模块</div>
-            <div class="content active">
-                <a class="item">
-                    新生入驻
-                </a>
-                <a class="item">
-                    校园动态
-                </a>
-                <a class="item">
-                    杂谈
-                </a>
-                <a class="item">
-                    招聘栏目
-                </a>
-                <a class="item">
-                    活动组织
-                </a>
-            </div>
-            <div class="title m-margin-top-small" style="font-size: 1.2em!important;"><i class="dropdown icon"></i> 信息快讯 </div>
-            <div class="content">
-                <a class="item">
-                    兼职相关
-                </a>
-                <a class="item">
-                    房屋宿舍
-                </a>
-                <a class="item">
-                    跳蚤市场
-                </a>
-            </div>
-            <div class="title m-margin-top-small" style="font-size: 1.2em!important;"><i class="dropdown icon"></i> 人文艺术 </div>
-            <div class="content">
-                <a class="item">
-                    原创地带
-                </a>
-                <a class="item">
-                    外语交流
-                </a>
-                <a class="item">
-                    考研专区
-                </a>
-                <a class="item">
-                    其他
-                </a>
-            </div>
-            <div class="title m-margin-top-small" style="font-size: 1.2em!important;"><i class="dropdown icon"></i> 飞扬青春 </div>
-            <div class="content">
-                <a class="item">
-                    爱好交流
-                </a>
-                <a class="item">
-                    小伙伴散落聚集地
-                </a>
-                <a class="item">
-                    单身男女俱乐部
-                </a>
-            </div>
-            <div class="title m-margin-top-small" style="font-size: 1.2em!important;"><i class="dropdown icon"></i> 站务 </div>
-            <div class="content">
-                <a class="item">
-                    江淮站务
-                </a>
-            </div>
-        </div>
-
-    </div>
-</div>
+<body>
+<script type="text/javascript" src="./static/js/head.js"></script>
 <!--内容页面-->
+
 <div class="ui vertical segment" style="background-color:#efefef!important; padding: 0!important;">
     <div class="m-margin-bottom">
         <img class="h-img"  src="http://www.ahujhc.cn/images/graduate.jpg" alt="">
     </div>
-    <div class="ui center aligned container m-margin-bottom">
-        <div id="waypoint" class="ui attached m-shadow padded segment">
-            <div class="ui grid">
-                <div class="column">
+    <div id="waypoint" class="ui center aligned container m-margin-bottom">
+
+
+                <div class="ui three column grid">
+
                     <div class="row">
-                        <div class="ui red segment">
-                            <h1 class="typo-h2">首页推荐</h1>
-                            <h4 class="ui horizontal divider header"><i class="calendar icon"></i> recommendation</h4>
-                            <p class="typo-p"><a href="#">【直播】“健康数据科学 · 在线大讲堂 - 大师课”</a></p>
-                            <p class="typo-p"><a href="#">【直播】“健康数据科学 · 在线大讲堂 - 大师课”</a></p>
-                            <p class="typo-p"><a href="#">【直播】“健康数据科学 · 在线大讲堂 - 大师课”</a></p>
-                            <p class="typo-p"><a href="#">【直播】“健康数据科学 · 在线大讲堂 - 大师课”</a></p>
-                            <p class="typo-p"><a href="#">【直播】“健康数据科学 · 在线大讲堂 - 大师课”</a></p>
+                        <!--        天气-->
+                        <div class="ten wide column">
+                            <div id="he-plugin-standard"  class="column">
+                            </div>
                         </div>
+<!--                        卡片-->
+                        <div class="four wide column" >
+                                <div class="ui card" style="height: 450px">
+                                    <div class="image">
+                                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1596389239813&di=829db95487628f8f1118f6273723f1db&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201508%2F20%2F20150820003153_UwJfV.thumb.700_0.jpeg">
+                                    </div>
+                                    <div class="content">
+                                        <a class="header">Kristy</a>
+                                        <div class="meta">
+                                            <span class="date">2013年加入</span>
+                                        </div>
+                                        <div class="description">Kristy is an art director living in New York. </div>
+                                    </div>
+                                    <div class="extra content">
+                                        <a><i class="user icon"></i> 22 个帖子 </a>
+                                    </div>
+                                </div>
+                        </div>
+<!--                        小幽灵-->
+                        <div class="two wide column" >
+                            <div class="ui segment" style="height: 450px;background-color: black">
+                                <div class="ghost">
+                                    <div class="body">
+                                        <div class="face">
+                                            <div class="eyes"></div>
+                                            <div class="mouth"></div>
+                                        </div>
+                                        <div class="bottom">
+                                            <div class="circle"></div>
+                                            <div class="circle"></div>
+                                            <div class="circle"></div>
+                                            <div class="wave"></div>
+                                        </div>
+                                    </div>
+                                    <div class="shadow"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                </div>
-            </div>
+
             <div class="ui two column grid">
                 <div class="row">
                     <div class="column">
@@ -203,84 +145,32 @@
                     </div>
                 </div>
             </div>
-        </div>
+
     </div>
 </div>
 
-<!--置顶按钮-->
-<div id="toolbar" class="m-padded m-fixed m-right-bottom">
-    <div class="ui vertical icon buttons">
-        <div id="toTop" class="ui icon black button m-margin-top-large-blog"><i class="big angle double up icon"></i></div>
-    </div>
-</div>
-<footer class="ui vertical segment m-padded-tb-massive m-opacity-nav m-margin-top-large" style="background-color: white">
-    <div class="ui center aligned container">
-        <h3 class="typo-h3">江淮BBS<i class="heartbeat icon"></i> </h3>
-        <p id="hitokoto" class="typo-p m-margin-bottom">:D 获取中...</p>
-        <a href="#" style="color: #333333" class="m-margin-top typo-p">联系开发者</a>
-    </div>
-</footer>
+
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
 <script src="https://cdn.bootcdn.net/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 <script src="./static/lib/waypoints/jquery.waypoints.min.js"></script>
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery-scrollTo/2.0.1/jquery.scrollTo.min.js"></script>
-<script src="./static/js/index.js"></script>
-
+<script src="static/js/main.js"></script>
+<script src="static/js/login.js"></script>
+<script type="text/javascript" src="./static/js/iframe.js"></script>
 <script>
-    $(' .ui.sidebar')
-        // .sidebar({
-        //     context: $(' .bottom.segment')
-        // })
-        .sidebar('setting',{
-            dimPage             : false,
-            transition          : 'uncover',
-            mobileTransition    : 'uncover'
-        })
-        .sidebar('attach events', '.m-item')
-    ;
-    $(document).ready(function(){
-        $('.accordion').accordion({duration:'click'});
-    });
-    $('.progress').progress();
-    var xhr = new XMLHttpRequest();
-    xhr.open('get', 'https://v1.hitokoto.cn');
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4) {
-            var data = JSON.parse(xhr.responseText);
-            var hitokoto = document.getElementById('hitokoto');
-            hitokoto.innerText = data.hitokoto;
+    WIDGET = {
+        CONFIG: {
+            "layout": 2,
+            "width": "700",
+            "height": "450",
+            "background": 3,
+            "dataColor": "FFFFFF",
+            "borderRadius": 5,
+            "key": "6a8ad7434f2b41d3895831c92bb51d3a"
         }
     }
-    xhr.send();
-    // 置顶按钮
-
-    var waypoint = new Waypoint({
-        element: document.getElementById('waypoint'),
-        handler: function(direction) {
-            if(direction == 'down'){
-                $('#toolbar').show(200);
-            } else {
-                $('#toolbar').hide(500);
-            }
-
-        }
-    });
-    var waypoint1 = new Waypoint({
-        element: document.getElementById('waypoint'),
-        handler: function(direction) {
-            if(direction == 'down'){
-                $('#menu').show(200);
-            } else {
-                $('#menu').hide(500);
-            }
-
-        }
-    });
-    $('#toTop').click(function () {
-        $(window).scrollTo(0,500);
-    });
-
 </script>
+<script src="https://widget.heweather.net/standard/static/js/he-standard-common.js?v=1.1"></script>
 </body>
 </html>

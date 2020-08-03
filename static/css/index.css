@@ -5,3 +5,134 @@
     width: 100%!important;
     object-fit: cover!important;
 }
+.ghost {
+    position: relative;
+}
+.ghost .body {
+    width: 10rem;
+    height: 18rem;
+    background: #fff;
+    border-radius: 5rem 5rem 1rem 1rem;
+    box-shadow: inset -1.25rem;
+    animation: ghostFloat 2s ease-in-out infinite;
+}
+.ghost .body .face {
+    position: absolute;
+    top: 4.2rem;
+    left: 2.8rem;
+}
+.ghost .body .face .eyes {
+    width: 1.9rem;
+    height: 2.6rem;
+    background: #195157;
+    border-radius: 50%;
+    animation: eyesBlink 3s linear infinite;
+}
+.ghost .body .face .eyes::before {
+    position: absolute;
+    content: "";
+    width: 85%;
+    height: inherit;
+    left: 4.3rem;
+    background: inherit;
+    border-radius: inherit;
+}
+.ghost .body .face .mouth {
+    position: absolute;
+    top: 2.5rem;
+    left: .2rem;
+    background: #fff;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+.ghost .body .face .mouth::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    width: 83%;
+    left: .3rem;
+    height: inherit;
+    border-radius: 50%;
+    box-shadow: 0px 5px 0px 0px #195157;
+}
+.ghost .bottom {
+    position: absolute;
+    top: 17rem;
+}
+.ghost .bottom .circle {
+    position: absolute;
+    z-index: 2;
+    width: 2.23rem;
+    height: 2.2rem;
+    background: #fff;
+    border-radius: 0 0 1rem 1rem;
+}
+.ghost .bottom .circle:nth-child(1) {
+    left: 0;
+}
+.ghost .bottom .circle:nth-child(2) {
+    left: 3.9rem;
+    border-radius: 1rem;
+}
+.ghost .bottom .circle:nth-child(3) {
+    left: 7.8rem;
+}
+.ghost .bottom .wave {
+    position: relative;
+    z-index: 1;
+    left: 2rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    background: #c3c7cb;
+    border-radius: 1rem;
+    box-shadow: inset 0rem 1.1rem 0 #fff;
+}
+.ghost .bottom .wave::before {
+    position: absolute;
+    content: "";
+    left: 3.9rem;
+    width: inherit;
+    height: inherit;
+    background: inherit;
+    border-radius: inherit;
+    box-shadow: inherit;
+}
+
+.shadow {
+    position: absolute;
+    width: 10rem;
+    height: 1rem;
+    top: 20rem;
+    border-radius: 50%;
+    background: #174142;
+    filter: blur(0.1rem);
+    animation: shadowAnimation 2s linear infinite;
+}
+
+@keyframes ghostFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1rem);
+    }
+}
+@keyframes eyesBlink {
+    0%, 30%, 38%, 100% {
+        transform: scale(1);
+    }
+    34%, 36% {
+        transform: scale(1, 0);
+    }
+}
+@keyframes shadowAnimation {
+    0%, 100% {
+        opacity: 100%;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 70%;
+        transform: scale(0.9, 0.9);
+    }
+}
