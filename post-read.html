@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>江淮BBS</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/me.css">
+    <link rel="stylesheet" href="./static/css/typo.css">
+
+</head>
+<body>
+<script type="text/javascript" src="./static/js/head.js"></script>
+<!--内容页面-->
+<div id="article" class="ui vertical segment" style="background-color:#efefef!important; padding: 0!important;">
+    <div class="ui container m-margin-bottom">
+        <div  class="ui basic segment">
+
+<!--            作者相关-->
+            <div id="waypoint" class="ui top red padded attached m-margin-top  segment">
+                        <button class="ui labeled icon inverted red button"><i class="left arrow icon"></i> 回到本版 </button>
+
+                        <div class="ui right floated pagination menu">
+                            <a class="icon item">
+                                <i class="left chevron icon"></i>
+                            </a>
+                            <a class="item">1</a>
+                            <a class="item">2</a>
+                            <a class="item">3</a>
+                            <a class="item">4</a>
+                            <a class="icon item">
+                                <i class="right chevron icon"></i>
+                            </a>
+                        </div>
+                    </div>
+            <div class="ui attached segment">
+<!--                        <div class="ui basic horizontal segments">-->
+                        <div class="ui grid">
+                            <div class="ui attached segment">
+                            <div class="ui basic left floated segment">
+                                <h2 class="typo-h2">优秀的 REST API 设计指南</h2>
+                                <p class="typo-p" style="color: #666666"><a href="#" style="color: #666666">嘤嘤嘤</a> · <span>3</span> 天前 · <span>10110</span> 次点击</p>
+                            </div>
+                            <div class="ui basic right floated segment">
+                                <img class="ui tiny image m-img-radius" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1256618523,2283567347&fm=26&gp=0.jpg" alt="">
+                            </div>
+                            </div>
+                        </div>
+<!--                        </div>-->
+                    </div>
+            <div class="ui bottom attached padded segment">
+                <h3 class="typo-h3">这是一篇会长期更新的文章</h3>
+                <p class="typo-p">什么样的 API 设计能被称为优秀当然是一个非常主观的标准，但是还是有一些客观可考量 API 质量的数据，比如</p>
+                <p>不管是前端程序员还是后端程序员，都少不了跟 API 打交道。后端需要把 API 设计和实现出来，而前端程序员需要把界面逻辑和 API 接起来，因此对于 REST 的设计规则有一些基本了解，不管你是前端还是后端，都会有很大帮助。</p>
+                <p>之前在厂里设计了一些还算被广泛使用的 API， 因此我写了这篇文章，结合之前的经验总结了一些要点。希望作为一个参考，可以帮助大家</p>
+            </div>
+
+<!--            评论-->
+            <div class="ui top blue attached m-margin-top-large segment">
+               <p class="typo-p" style="color: #666666"><span>58</span> 条回复  •  <span>2020-07-31 18:57:19</span></p>
+            </div>
+            <div class="ui attached segment" style="position:relative;">
+                <div class="ui two column grid">
+                    <div class="three wide column" style="text-align: center">
+                        <div class="ui segment">
+                            <img class="ui image m-img-radius " style="width: 100%;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1596282673252&di=4ffb8d15f3c2b302d6e68a1738ce50ad&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201806%2F26%2F20180626230933_XWwzX.thumb.700_0.jpeg">
+                            <h4><a href="#" style="color:#666666;">嘤嘤嘤二号</a></h4>
+                            <div class="ui labeled mini button" tabindex="0">
+                                <div class="ui blue mini button"><i class="heart icon"></i> 等级 </div>
+                                <p class="ui basic blue left pointing label">
+                                    5
+                                </p>
+                            </div>
+                            <div class="m-margin-top">
+                                <button class="ui circular envelope icon button">
+                                    <i class="envelope icon"></i>
+                                </button>
+                                <button class="ui circular save icon button">
+                                    <i class="save icon"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                        <p class="typo-h5 m-opacity-mini">#一楼</p>
+                    </div>
+                    <div class="thirteen wide column">
+                        <div class="ui row m-margin-top">
+                            <p class="typo-p">我认为在设计过程中我认为在设计过程中我认为在设计过程中我认为在设计过程中我认为在设计过程中我认为在设计过程中，需要考虑 HTTP 方法的幂等性。比如 Github 的 Star 操作，为什么是 PUT 而不是 POST，就是从幂等性方面考虑的</p>
+                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1596538720787&di=f01ca7ceed0ec29305a029d05325f0fa&imgtype=0&src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F8988a275f2ced98988d756904758c764b83984b5.png" alt="">
+                        </div>
+                        <div class="ui row" style="position:absolute;bottom: 1em;right: 2em;">
+                            <p style="font-size: 1em">发表于 <span>2020-07-31 22:40:07</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui attached segment" style="position:relative;">
+                <div class="ui two column grid">
+                    <div class="three wide column" style="text-align: center">
+                        <div class="ui segment">
+                            <img class="ui image m-img-radius " style="width: 100%;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1596282673252&di=4ffb8d15f3c2b302d6e68a1738ce50ad&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201806%2F26%2F20180626230933_XWwzX.thumb.700_0.jpeg">
+                            <h4><a href="#" style="color:#666666;">嘤嘤嘤二号</a></h4>
+                            <div class="ui labeled mini button" tabindex="0">
+                                <div class="ui blue mini button"><i class="heart icon"></i> 等级 </div>
+                                <p class="ui basic blue left pointing label">
+                                    5
+                                </p>
+                            </div>
+                            <div class="m-margin-top">
+                                <button class="ui circular envelope icon button">
+                                    <i class="envelope icon"></i>
+                                </button>
+                                <button class="ui circular save icon button">
+                                    <i class="save icon"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                        <p class="typo-h5 m-opacity-mini">#二楼</p>
+                    </div>
+                    <div class="thirteen wide column">
+                        <div class="ui row m-margin-top">
+                            <p class="typo-p">我认为在设计过程中我认为在设计过程中我认为在设计过程中我认为在设计过程中我认为在设计过程中我认为在设计过程中，需要考虑 HTTP 方法的幂等性。比如 Github 的 Star 操作，为什么是 PUT 而不是 POST，就是从幂等性方面考虑的</p>
+                        </div>
+                        <div class="ui row" style="position:absolute;bottom: 1em;right: 2em;">
+                            <p style="font-size: 1em">发表于 <span>2020-07-31 22:40:07</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui attached segment" style="position:relative;">
+                <div class="ui two column grid">
+                    <div class="three wide column" style="text-align: center">
+                        <div class="ui segment">
+                            <img class="ui image m-img-radius " style="width: 100%;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1596282673252&di=4ffb8d15f3c2b302d6e68a1738ce50ad&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201806%2F26%2F20180626230933_XWwzX.thumb.700_0.jpeg">
+                            <h4><a href="#" style="color:#666666;">嘤嘤嘤二号</a></h4>
+                            <div class="ui labeled mini button" tabindex="0">
+                                <div class="ui blue mini button"><i class="heart icon"></i> 等级 </div>
+                                <p class="ui basic blue left pointing label">
+                                    5
+                                </p>
+                            </div>
+                            <div class="m-margin-top">
+                                <button class="ui circular envelope icon button">
+                                    <i class="envelope icon"></i>
+                                </button>
+                                <button class="ui circular save icon button">
+                                    <i class="save icon"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                        <p class="typo-h5 m-opacity-mini">#三楼</p>
+                    </div>
+                    <div class="thirteen wide column">
+                        <div class="ui row m-margin-top">
+                            <p class="typo-p">我认为在设计过程中我认为在设计过程中我认为在设计过程中我认为在设计过程中我认为在设计过程中我认为在设计过程中，需要考虑 HTTP 方法的幂等性。比如 Github 的 Star 操作，为什么是 PUT 而不是 POST，就是从幂等性方面考虑的</p>
+                        </div>
+                        <div class="ui row" style="position:absolute;bottom: 1em;right: 2em;">
+                            <p style="font-size: 1em">发表于 <span>2020-07-31 22:40:07</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui attached segment" style="position:relative;">
+                <div class="ui two column grid">
+                    <div class="three wide column" style="text-align: center">
+                        <div class="ui segment">
+                            <img class="ui image m-img-radius " style="width: 100%;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1596282673252&di=4ffb8d15f3c2b302d6e68a1738ce50ad&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201806%2F26%2F20180626230933_XWwzX.thumb.700_0.jpeg">
+                            <h4><a href="#" style="color:#666666;">嘤嘤嘤二号</a></h4>
+                            <div class="ui labeled mini button" tabindex="0">
+                                <div class="ui blue mini button"><i class="heart icon"></i> 等级 </div>
+                                <p class="ui basic blue left pointing label">
+                                    5
+                                </p>
+                            </div>
+                            <div class="m-margin-top">
+                                <button class="ui circular envelope icon button">
+                                    <i class="envelope icon"></i>
+                                </button>
+                                <button class="ui circular save icon button">
+                                    <i class="save icon"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                        <p class="typo-h5 m-opacity-mini">#四楼</p>
+                    </div>
+                    <div class="thirteen wide column">
+                        <div class="ui row m-margin-top">
+                            <p class="typo-p">我认为在设计过程中我认为在设计过程中我认为在设计过程中我认为在设计过程中我认为在设计过程中我认为在设计过程中，需要考虑 HTTP 方法的幂等性。比如 Github 的 Star 操作，为什么是 PUT 而不是 POST，就是从幂等性方面考虑的</p>
+                        </div>
+                        <div class="ui row" style="position:absolute;bottom: 1em;right: 2em;">
+                            <p style="font-size: 1em">发表于 <span>2020-07-31 22:40:07</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui attached segment" style="position:relative;">
+                <div class="ui two column grid">
+                    <div class="three wide column" style="text-align: center">
+                        <div class="ui segment">
+                            <img class="ui image m-img-radius " style="width: 100%;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1596282673252&di=4ffb8d15f3c2b302d6e68a1738ce50ad&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201806%2F26%2F20180626230933_XWwzX.thumb.700_0.jpeg">
+                            <h4><a href="#" style="color:#666666;">嘤嘤嘤二号</a></h4>
+                            <div class="ui labeled mini button" tabindex="0">
+                                <div class="ui blue mini button"><i class="heart icon"></i> 等级 </div>
+                                <p class="ui basic blue left pointing label">
+                                    5
+                                </p>
+                            </div>
+                            <div class="m-margin-top">
+                                <button class="ui circular envelope icon button">
+                                    <i class="envelope icon"></i>
+                                </button>
+                                <button class="ui circular save icon button">
+                                    <i class="save icon"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                        <p class="typo-h5 m-opacity-mini">#五楼</p>
+                    </div>
+                    <div class="thirteen wide column">
+                        <div class="ui row m-margin-top">
+                            <p class="typo-p">我认为在设计过程中我认为在设计过程中我认为在设计过程中我认为在设计过程中我认为在设计过程中我认为在设计过程中，需要考虑 HTTP 方法的幂等性。比如 Github 的 Star 操作，为什么是 PUT 而不是 POST，就是从幂等性方面考虑的</p>
+                        </div>
+                        <div class="ui row" style="position:absolute;bottom: 1em;right: 2em;">
+                            <p style="font-size: 1em">发表于 <span>2020-07-31 22:40:07</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui bottom attached padded segment">
+                <p class="typo-p" style="color: #666666">江淮bbs</p>
+            </div>
+
+<!--            快捷发帖-->
+            <div class="ui segment m-margin-top-large" style="padding:0!important;">
+                <div class="ui form">
+                    <div id="editor" class="m-comment"></div>
+                    <div class="field m-margin-bottom-small m-margin-top m-mobile-wide">
+                        <button class="ui button m-mobile-wide" style="margin-left: 90%"><i class="edit icon"></i>发布</button>
+                    </div>
+                    <!--
+                    <div class="field">
+                        <textarea name="content" class="m-comment" placeholder="请输入评论信息"></textarea>
+                    </div>
+
+                    <div class="field m-margin-bottom-small m-mobile-wide">
+                        <button class="ui button m-mobile-wide"><i class="edit icon"></i>发布</button>
+                    </div>
+-->
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+<script src="./static/lib/waypoints/jquery.waypoints.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery-scrollTo/2.0.1/jquery.scrollTo.min.js"></script>
+<script src="./static/js/index.js"></script>
+<script type="text/javascript" src="./static/js/iframe.js"></script>
+<script type="text/javascript" src="./static/lib/editor/wangEditor.min.js"></script>
+<script type="text/javascript">
+    var E = window.wangEditor
+    var editor = new E('#editor')
+    // 或者 var editor = new E( document.getElementById('editor') )
+    editor.create()
+</script>
+<script type="text/javascript" >
+
+    //缩放图片到合适大小
+    function ResizeImages()
+    {
+        var myimg,oldwidth,oldheight;
+        var maxwidth=550;
+        var maxheight=880
+        var imgs = document.getElementById('article').getElementsByTagName('img');   //如果你定义的id不是article，请修改此处
+
+        for(i=0;i<imgs.length;i++){
+            myimg = imgs[i];
+
+            if(myimg.width > myimg.height)
+            {
+                if(myimg.width > maxwidth)
+                {
+                    oldwidth = myimg.width;
+                    myimg.height = myimg.height * (maxwidth/oldwidth);
+                    myimg.width = maxwidth;
+                }
+            }else{
+                if(myimg.height > maxheight)
+                {
+                    oldheight = myimg.height;
+                    myimg.width = myimg.width * (maxheight/oldheight);
+                    myimg.height = maxheight;
+                }
+            }
+        }
+    }
+    //缩放图片到合适大小
+    ResizeImages();
+</script>
+</body>
+</html>
